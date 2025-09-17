@@ -1,0 +1,6 @@
+Kasandra Pepkolaj
+
+Highly accurate protein structure prediction with AlphaFold: The computational approach the authors are proposing to use.
+
+The authors are proposing a new computational method, AlphaFold2, which achieves near-experimental accuracy prediction of protein structures in a majority of cases.  
+
