@@ -1,4 +1,5 @@
-I was assigned number 4.
+Fahad Khan
+
 Reasons why you will not be able to replicate the study's findings using their GitHub repository?
 Even though DeepMind put out a GitHub repo with the code and models, it’s not possible for us to fully 
 redo the AlphaFold study. The main reason is the amount of computing power it needs — they used tons of 
