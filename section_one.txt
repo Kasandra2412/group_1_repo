@@ -1,0 +1,3 @@
+Yiwei Sun
+Q1:
+The authors are addressing the prediction of three-dimensional protein structures from a protein's amino acid sequence. And this problem has been an essential open research problem for over fifty years. There were two development pathways of computational methods to predict three-dimensional (3D) protein structures from the protein sequence, physical interaction programme and evolutionary programme. However, in the majority of cases, if a close homologue has not been solved experimentally, the prediction accuracy of both methods is less than ideal. In this article, the authors developed the first computational approach that can predict protein structures with near experimental accuracy in most situations.
