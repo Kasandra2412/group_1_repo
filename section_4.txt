@@ -1,0 +1,9 @@
+I was assigned number 4.
+Reasons why you will not be able to replicate the study's findings using their GitHub repository?
+Even though DeepMind put out a GitHub repo with the code and models, it’s not possible for us to fully 
+redo the AlphaFold study. The main reason is the amount of computing power it needs — they used tons of 
+GPUs/TPUs and trained the system for a long time, which we don’t have access to. It also depends on 
+really big databases like UniRef and PDB that take a lot of storage and setup. On top of that,
+a lot of their exact preprocessing steps, optimizations, and fine-tuned 
+weights can’t easily be recreated without their setup. So, the GitHub repo lets us run predictions
+with the pre-trained models, but we can’t retrain it ourselves or get the same results they did.
