@@ -2,5 +2,4 @@ Kasandra Pepkolaj
 
 Highly accurate protein structure prediction with AlphaFold: The computational approach the authors are proposing to use.
 
-The authors are proposing a new computational method, AlphaFold2, which achieves near-experimental accuracy prediction of protein structures in a majority of cases.  
-
+The authors are proposing a new computational method, AlphaFold2, which achieves near-experimental accuracy prediction of protein structures by incorporating novel neural network architectures and training procedures based on protein structure constraints. AlphaFold2 particularly predicts 3D coordinates of all heavy atoms for a given protein using the primary amino acid sequence and aligned sequences of homologues as inputs. The architecture is set in two stages, Evoformer, which processes the inputs through repeated layers of a novel neural network block into a processed MSA and residue pairs representations, and the structure module, which introduces an explicit 3D structure in the form of a rotation and translation for each protein, rapidly developing and refining a highly accurate protein structure with precise atomic details.
