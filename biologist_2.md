@@ -1,4 +1,4 @@
-lab report 1
+Lab report 1
 
 "Molecular Fingerprints Are Strong Models for Peptide Function Prediction"
 
