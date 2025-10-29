@@ -76,3 +76,24 @@ It teaches the relationship between biological sequences and experimental outcom
 It’s ideal for the engineering team since all code runs locally in Jupyter with minimal dependencies.
 
 
+# Biologist Report 4 – SoDoPE (Protein Solubility and Domain Prediction)
+
+## Paper Information
+**Title:** SoDoPE: Fast and accurate prediction of protein solubility and domain boundaries  
+**Authors:** Gardner BinfLab (University of Melbourne, 2020)  
+**Article Link:** [https://academic.oup.com/bioinformatics/article-pdf/36/18/4691/50677813/btaa578.pdf](https://academic.oup.com/bioinformatics/article-pdf/36/18/4691/50677813/btaa578.pdf)  
+**GitHub Repo:** [https://github.com/Gardner-BinfLab/SoDoPE_paper_2020](https://github.com/Gardner-BinfLab/SoDoPE_paper_2020)  
+**Jupyter Notebook:** [SoDoPE_notebook.ipynb](https://github.com/Gardner-BinfLab/SoDoPE_paper_2020/blob/master/SoDoPE_notebook.ipynb)  
+
+## Platform
+Jupyter Notebook (Python 3; pandas, scikit-learn, matplotlib)
+
+## Summary of the Paper
+SoDoPE integrates machine learning with protein feature extraction to predict solubility and folding domains.  
+It uses sequence-based features and pre-trained ML classifiers for solubility scoring, and the repository includes a runnable notebook for demonstration.  
+This project aims to simplify bioinformatics predictions for experimental protein design.
+
+## Why It Fits Our Theme
+This paper continues our team’s focus on protein analysis using open, runnable Jupyter notebooks.  
+It provides a reproducible workflow that’s easy for engineers to test and adapt, connecting biological data with predictive modeling.  
+It balances scientific rigor with technical accessibility—making it a great addition to our group project.
