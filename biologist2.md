@@ -29,4 +29,25 @@ This paper provides an open, runnable notebook that aligns with our engineering 
 It connects computational modeling with biological interpretation
 
 
+# Biologist Report 2 — BioBB Workflows (Reproducible Biomolecular Simulation)
+
+## Paper Information  
+**Title:** Using interactive Jupyter Notebooks and BioConda for FAIR and reproducible biomolecular simulation workflows  
+**Authors:** Bayarri, Andrio, Gelpí, Hospital, Orozco, *PLOS Computational Biology* (2024)  
+**Article Link:** [https://doi.org/10.1371/journal.pcbi.1012173](https://doi.org/10.1371/journal.pcbi.1012173)  
+**GitHub Repo:** [https://github.com/bioexcel/biobb_workflows](https://github.com/bioexcel/biobb_workflows)  
+**Website:** [https://mmb.irbbarcelona.org/biobb/](https://mmb.irbbarcelona.org/biobb/)  
+
+## Platform  
+Jupyter Notebook (local or remote via BioConda environment)  
+
+## Summary of the Paper  
+This paper introduces BioBB Workflows, a collection of reproducible biomolecular simulation pipelines designed to run in Jupyter Notebooks using **BioConda** packages.  
+It focuses on fair principles — Findable, Accessible, Interoperable, and Reusable — for biomolecular modeling, docking, and molecular dynamics.  
+The authors provide complete runnable notebooks for tasks like protein–ligand docking and trajectory analysis, demonstrating open and shareable computational biology workflows.
+
+## Why It Fits Our Theme  
+This project provides directly runnable Jupyter notebooks with reproducible environments — ideal for our engineering team to execute and test.  
+From a biological perspective, it connects simulation data (e.g., protein–ligand interactions) with interpretation of structural dynamics — aligning with our group’s protein modeling focus.  
+
 
