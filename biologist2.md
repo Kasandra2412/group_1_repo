@@ -97,3 +97,32 @@ This project aims to simplify bioinformatics predictions for experimental protei
 This paper continues our team’s focus on protein analysis using open, runnable Jupyter notebooks.  
 It provides a reproducible workflow that’s easy for engineers to test and adapt, connecting biological data with predictive modeling.  
 It balances scientific rigor with technical accessibility—making it a great addition to our group project.
+
+
+# Biologist Report 3 — Protein Solubility Prediction (Regression & ANN Models)
+
+## **Paper Information**
+
+**Title:** Protein solubility prediction using regression, artificial neural networks, and XGBoost  
+**Authors:** Xiaomi Zhou et al. (2020)  
+**Article Link:** *(Open research release — not formally published)*  
+**GitHub Repo:** https://github.com/xiaomizhou616/Protein_solubility_regression_model  
+**Jupyter Notebooks:**  
+- ANNs-solubility-final.ipynb  
+- XGboost-final.ipynb  
+
+## **Platform**
+
+Jupyter Notebook (Python 3; pandas, numpy, sklearn, xgboost)
+
+## **Summary of the Paper**
+
+This project uses multiple machine learning models to predict protein solubility from sequence-derived features.  
+It compares linear regression, artificial neural networks, and XGBoost to identify physicochemical properties linked to protein solubility.  
+The GitHub repository includes fully runnable notebooks and example datasets.
+
+## **Why It Fits Our Theme**
+
+This project provides simple, reproducible Jupyter notebooks ideal for our engineering team.  
+It strengthens the link between protein sequence data and interpretable ML outcomes, aligning with our overall protein modeling theme.
+
