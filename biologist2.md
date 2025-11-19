@@ -99,7 +99,7 @@ It provides a reproducible workflow that’s easy for engineers to test and adap
 It balances scientific rigor with technical accessibility—making it a great addition to our group project.
 
 
-# Biologist Report 3 — Protein Solubility Prediction (Regression & ANN Models)
+# Biologist Report 5 — Protein Solubility Prediction (Regression & ANN Models)
 
 ## **Paper Information**
 
