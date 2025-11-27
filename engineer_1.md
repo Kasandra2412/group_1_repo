@@ -1,11 +1,21 @@
-Engineer 1: Kasandra Pepkolaj
+***Engineer 1: Kasandra Pepkolaj***
 
-DNAscent v2: detecting replication forks in nanopore sequencing data with deep learning by Michael A. Boemo.
-Github link: https://github.com/MBoemo/DNAscent
-
-	1. Used a Kali Linux Virtual Machine to install Singularity/Apptainer since it's better suited to use this container in Linux systems.
-	2. Tried running the singularity image provided, but it wasn't possible since my primary machine is Apple Silicon Mac, while the image only runs on x86_64 intel AMD machines. 
-	3. Tried the building from source method provided. Followed the steps, didn't work since the Makefile tries to download and compile an old version of HDF5 as a dependency. Need to install HDF5 from my system packages. Used command sudo apt install libhdf5-dev. 
-
-
-
+##Report 1 - DNAscent v2
+***Paper***: DNAscent v2: detecting replication forks in nanopore sequencing data with deep learning by Michael A. Boemo.
+***Github link***: https://github.com/MBoemo/DNAscent
+***Results***: Not reproducible due to computer architecture incompatibility.
+---
+***Main issues:*** 
+	1. Pre-build Singularity containers were designed for x86_64 architecture, not ARM64 architecture of my laptop. Tried using Singularity image that might work on ARM64 but the size was too big and I encountered hardware warnings (continuous beeping).
+	2. DNAscent relies on very old dependencies, HDF5 1.8.14, which is not designed for ARM64. Tried to install dependency according to the right architecture, but kept getting architecture errors and compiling issues.
+---
+***Steps taken:***
+	1. Singularity image
+		* Copied the commands provided from the instructions on the Github. The recommended way was to run the DNAscent via the supported Singularity images through running:  ```singularity pull DNAscent.sif library://mboemo/dnascent/dnascent:4.1.1.```
+		* The singularity image also didn't recognize my computer's architecture. After a few changes it seemed that files were being downloaded but this lead to my computer beeping, which signified some RAM issues.
+	2. Building from Source
+		* Cloned the repository: git clone --recursive https://github.com/MBoemo/DNAscent.git
+		* Followed these commands: `cd DNAscent` --> `git checkout 4.1.1` --> `make`
+		* `make` caused errors due to older dependencies. DNAscent tried to download HDF5 version 1.8.14 (2014 version) and compile it manually. However, this version is very old and the scripts didn't recognize ARM64 architecture.
+		* tried updating the scripts, config.guess and config.sub, but this also didn't work.
+		* tried changing the Makefile manually, and this didn't work. I kept getting errors about dependencies that only work with x86_64 architecture.
