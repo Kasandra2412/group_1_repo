@@ -50,21 +50,21 @@
 4. Dowloaded the zip file provided that contained the BAM file: `wget http://xfer.curie.fr/get/LfyDX92pNQs/template.bam.zip` and unzipped it: `unzip template.bam.zip` --> received the BAM files as *template_chr21_22.bam and template-chr21_22.bam.bai*.
 5. Loaded OKseqHMM in R and ran OKseqHMM in R based on the template script they provided:
 
-```
-OKseqHMM(bamfile = "template_chr21_22.bam", thresh=10, chrsizes = "hg19.chr.size.txt",winS=15, fileOut = "hmm",binSize=1000)
-```
-and received the files in the current directory.
+	```r
+	OKseqHMM(bamfile = "template_chr21_22.bam", thresh=10, chrsizes = "hg19.chr.size.txt",winS=15, fileOut = "hmm",binSize=1000)
+	```
+	and received the files in the current directory.
 6. Loaded OKseqOEM in R and ran the code provided in the template:
 
-```r 
-OKseqOEM(bamInF = "hmm_fwd.bam",
-         bamInR = "hemm_rev.bam",
-         chrsizes = "hg19.chr.size.txt",
-         fileOut ="hela_OEM",
-	 binsize=1000,
-	 binList=c(1,10,20,50,100,250,500,1000))
-``` 
-
+	```r 
+	OKseqOEM(bamInF = "hmm_fwd.bam",
+         	bamInR = "hemm_rev.bam",
+         	chrsizes = "hg19.chr.size.txt",
+         	fileOut ="hela_OEM",
+	 	binsize=1000,
+	 	binList=c(1,10,20,50,100,250,500,1000))
+	``` 
+	and received the .wig files.
 	* During this phase I encountered issues with my files from OkseqHMM, mostly due to OKseqOEM trying to detect mapped reads in chr1 and the hg19.chr.size.txt only included up to chr19, while the mapped read of my files were in chr21-ch22.  
 	* Ran `samtools view -c hmm_fwd.bam` and `samtools view -c hmm_rev.bam` to confirm that there was data available in my files. Ran `samtools idxstats hmm_fwd.bam` to see where the reads were mapped to. It showed  that chr11-chr20 had no mapped reads and only chr21-ch22 were mapped.
 	* Had to create a new file and enter chr21   48129895 chr22   51304566 and used this file instead of the one provided on github. After running OKseqOEM again i finally received the .wig files.
