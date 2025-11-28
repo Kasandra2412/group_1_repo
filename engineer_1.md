@@ -5,9 +5,9 @@
 ---
 
 **Paper:** DNAscent v2: detecting replication forks in nanopore sequencing data with deep learning by Michael A. Boemo.  
-**Github link:** (https://github.com/MBoemo/DNAscent). 
-**Results:** Not reproducible due to computer architecture incompatibility.  
-** Tools used:** Ubuntu VM, ChatGPT, Claude AI, Google, git, singularity. 
+**Github link:** (https://github.com/MBoemo/DNAscent)  
+**Results:** Not reproducible due to computer architecture incompatibility  
+** Tools used:** Ubuntu VM, ChatGPT, Claude AI, Google, git, singularity  
 
 ---
 
@@ -36,8 +36,8 @@
 
 ---
 
-**Paper:** OKseqHMM: a genome-wide replication fork directionality analysis toolkit. 
-**Github link:** (https://github.com/CL-CHEN-Lab/OK-Seq). 
+**Paper:** OKseqHMM: a genome-wide replication fork directionality analysis toolkit  
+**Github link:** (https://github.com/CL-CHEN-Lab/OK-Seq)  
 **Results: Reproduced!**  
 **Tools used:** Ubuntu VM, R, ChatGPT, Google, git, samtools.    
 
@@ -52,17 +52,20 @@
 ```OKseqHMM(bamfile = "template_chr21_22.bam", thresh=10, chrsizes = "hg19.chr.size.txt",winS=15, fileOut = "hmm",binSize=1000)```
 and received the files in the current directory.
 6. Loaded OKseqOEM in R and ran the code provided in the template:
-``` OKseqOEM(bamInF = "hmm_fwd.bam",
+
+```r 
+OKseqOEM(bamInF = "hmm_fwd.bam",
          bamInR = "hemm_rev.bam",
          chrsizes = "hg19.chr.size.txt",
          fileOut ="hela_OEM",
 	 binsize=1000,
 	 binList=c(1,10,20,50,100,250,500,1000))
-```
+``` 
+
 and received the .wig files.  
-	*During this phase I encountered issues with my files from OkseqHMM, mostly due to OKseqOEM trying to detect mapped reads in chr1 and the hg19.chr.size.txt only included up to chr19, while the mapped read of my files were in chr21-ch22. 
-	*Ran `samtools view -c hmm_fwd.bam` and `samtools view -c hmm_rev.bam` to confirm that there was data available in my files. Ran `samtools idxstats hmm_fwd.bam` to see where the reads were mapped to. It showed  that chr11-chr20 had no mapped reads and only chr21-ch22 were mapped.
-	*Had to create a new file and enter chr21   48129895 chr22   51304566 and used this file instead of the one provided on github. After running OKseqOEM again i finally received the .wig files.
+	* During this phase I encountered issues with my files from OkseqHMM, mostly due to OKseqOEM trying to detect mapped reads in chr1 and the hg19.chr.size.txt only included up to chr19, while the mapped read of my files were in chr21-ch22.  
+	* Ran `samtools view -c hmm_fwd.bam` and `samtools view -c hmm_rev.bam` to confirm that there was data available in my files. Ran `samtools idxstats hmm_fwd.bam` to see where the reads were mapped to. It showed  that chr11-chr20 had no mapped reads and only chr21-ch22 were mapped.
+	* Had to create a new file and enter chr21   48129895 chr22   51304566 and used this file instead of the one provided on github. After running OKseqOEM again i finally received the .wig files.
 	
-##**Final Product - Visualized**
+## **Final Product - Visualized**
 ![OEM profiles](Engineer_1_Paper_2.png)
