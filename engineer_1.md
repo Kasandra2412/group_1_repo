@@ -5,8 +5,9 @@
 ---
 
 **Paper:** DNAscent v2: detecting replication forks in nanopore sequencing data with deep learning by Michael A. Boemo.  
+**Sent by:** Biologist 1  
 **Github link:** (https://github.com/MBoemo/DNAscent)  
-**Results:** Not reproducible due to computer architecture incompatibility  
+**Results:** Failed due to computer architecture incompatibility  
 **Tools used:** Ubuntu VM, ChatGPT, Claude AI, Google, git, singularity  
 
 ---
@@ -37,9 +38,10 @@
 ---
 
 **Paper:** OKseqHMM: a genome-wide replication fork directionality analysis toolkit  
+**Sent by:** Biologist 1  
 **Github link:** (https://github.com/CL-CHEN-Lab/OK-Seq)  
-**Results: Reproduced!**  
-**Tools used:** Ubuntu VM, R, ChatGPT, Google, git, samtools.    
+**Results: Success!**  
+**Tools used:** Ubuntu VM, R, ChatGPT, Google, git, samtools, IGV.    
 
 ---
 
