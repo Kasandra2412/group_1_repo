@@ -65,4 +65,4 @@ and received the .wig files.
 	* Had to create a new file and enter chr21   48129895 chr22   51304566 and used this file instead of the one provided on github. After running OKseqOEM again i finally received the .wig files.
 	
 **Final Product - Visualized**
-
+![OEM profiles](Engineer_1_Paper_2.png)
