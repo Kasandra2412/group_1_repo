@@ -73,3 +73,37 @@
 	
 ## **Final Product - Visualized**
 ![OEM profiles](Engineer_1_Paper_2.png)
+
+
+# Report 2 - GENEVIC
+
+---
+
+**Paper:** GENEVIC: GENetic data Exploration and Visualization via Intelligent interactive Console
+**Sent by:** Biologist 1  
+**Github link:** (https://github.com/bsml320/GENEVIC.git)  
+**Results: Success!**  
+**Tools used:** Docker , git.
+
+---
+
+## **Steps taken:**
+
+1. Downloaded the Docker image provided for GENEVIC and saved it in a specific directory in my computer.
+2. Run the command `docker load -i genevic-v1.tar` in Docker. This loaded the image into my Docker.
+3. Run the command `docker run -p 8501:8501 genevic-v1`. The command basically ran the image and made it available so I can access it.
+4. Accessed the website by typinf `http://localhost:8501` in my local browser and accessed GENEVIC.
+
+##**Summary of GENEVIC**
+
+GENEVIC is described as "an AI-driven chat framework that tackles this challenge by bridging the gap between genetic data generation and biomedical knowledge discovery. Leveraging generative AI, notably ChatGPT, it serves as a biologist's "copilot." It automates the analysis, retrieval, and visualization of customized domain-specific genetic information, and integrates functionalities to generate protein interaction networks, enrich gene sets, and search scientific literature from PubMed, Google Scholar, and arXiv, making it a comprehensive tool for biomedical research". Very cool! 
+
+The process was very simple to implement and in their github they also provided a manual method of installing. I explored GENEVIC a little more and the website was confusing and very in your face. Thankfully they provide a tutorial which explains the steps you need to take to use the website. To access their website you need Azure's Open AI credentials, mainly Azure OpenAI Endpoint and Azure OpenAI Key. Without these credential's the site won't have the generated AI content. 
+
+Based on the tutorial and information in the site there's three parts:
+1. GeneAPIChat: Explore external Bioinformatics websites via automated web API calls; Generate gene-gene interaction network, one or more gene names as input; Perform gene enrichment analysis with reference gene set libraries, given gene list as input; Visualize the network graph; Download the enrichment results as CSV and/or the visualizations in known image formats
+
+2. PGS Chat: Retrieve information from and visualize custom database; Use a question from the Prompts or enter your own question; You can select show code and/or show prompt to show SQL & Python code and the prompt behind the scene.
+
+3. LiteratureSearch: Search for literature evidence in PubMed, Google Scholar, or Arxiv; Search in 1 or 2 or all of websites at the same time; Display the name and links of the articles for any given search query; Displays the abstract of the article, given its link as search query.
+
