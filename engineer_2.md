@@ -36,3 +36,15 @@ I tried to reproduce the results from the paper. I followed the steps described 
 
 Engineer: Yiwei Sun
 
+
+
+Lab report 5(SoDoPE)
+
+Paper received from biologist #2 (Fahad)
+
+I tried to reproduce the paper, but I couldn't get it to work. The paper is old. Some databases it used are outdated. I also ran into library errors in Python that I couldn't fix. For example, MultiIndex handling in pandas changed a lot. Some functions used in the paper don't exist anymore. Even if I could fix the code, the results might not match exactly. I fixed some code with the help of ChatGPT, but I finally got stuck because of some functions and outdated format. The environment and data have changed since the paper was published. Overall, I thought it's not feasible to fully reproduce this paper. I learned a lot from trying, but I decided to focus on trying to reproduce other papers.
+
+Engineer: Yiwei Sun
+
+
+
