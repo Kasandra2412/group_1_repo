@@ -111,9 +111,9 @@ Based on the tutorial and information in the site there's three parts:
 
 ---
 
-**Paper:** SIMLR: A Tool for Large-Scale Genomic Analyses by Multi-Kernel Learning
+**Paper:** SIMLR: A Tool for Large-Scale Genomic Analyses by Multi-Kernel Learning  
 **Sent by:** Biologist 1  
-**Github link:** (https://github.com/bowang-lab/SIMLR) - Not the link provided from the paper. It was updated to this one.
+**Github link:** (https://github.com/bowang-lab/SIMLR) - Not the link provided from the paper. It was updated to this one.  
 **Results: Success!**  
 **Tools used:** Ubuntu VM, R, Bioconductor, git.
 
@@ -132,7 +132,11 @@ Based on the tutorial and information in the site there's three parts:
 	```
 	* Then I ran the provided R script.
 	
-This working method outputted a number of data and 2 pictures depicting the distribution of the 2 datasets, which are displayed below.
+This working method outputted a number of data and 2 pictures depicting the distribution of the 2 datasets, which are displayed below:
+
+1. Figure one showing the 2D visualized distribution for the BuettnerFlorian, the smaller demo dataset.
 ![SIMLR Figure 1](SIMLR_figure_1.png)
+
+2. Figure twp showing the 2D visualized distribution for the ZeiselAmit, the bigger demo dataset.
 ![SIMLR Figure 2](SIMLR_figure_2.png)
 
