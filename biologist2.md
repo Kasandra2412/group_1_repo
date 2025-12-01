@@ -126,3 +126,50 @@ The GitHub repository includes fully runnable notebooks and example datasets.
 This project provides simple, reproducible Jupyter notebooks ideal for our engineering team.  
 It strengthens the link between protein sequence data and interpretable ML outcomes, aligning with our overall protein modeling theme.
 
+
+# Biologist Report 6 — DeepPurpose Protein Property Prediction Toolkit
+
+
+## **Paper / Tool Information**
+
+**Title:** DeepPurpose — A Deep Learning Library for Drug–Target and Protein Property Prediction  
+**Authors:** Kexin Huang et al. (Ongoing open-source project)  
+**Article Link:** https://academic.oup.com/bioinformatics/article/36/22-23/5545/6020256?utm_source=chatgpt.com&login=false  
+**GitHub Repo:** https://github.com/kexinhuang12345/DeepPurpose  
+**Jupyter Notebooks:**  
+- `Tutorial_1_DTI_Prediction.ipynb`  
+- `Tutorial_Protein_Property_Prediction.ipynb`  
+(Located in the `tutorial` folder)
+
+
+## **Platform**
+
+Jupyter Notebook (Python 3; PyTorch, pandas, numpy)
+
+
+## **Summary of the Project**
+
+DeepPurpose is an open-source deep learning toolkit for predicting protein-related properties such as:
+- drug–protein interactions,
+- protein–protein interactions,
+- protein property scores.
+
+The repository contains multiple **easy, runnable Jupyter notebooks** using small datasets and simple workflows.  
+Most notebooks run directly in Jupyter or Google Colab with minimal setup.
+
+
+## **Why It Fits Our Theme**
+
+- Uses protein sequences and features to predict meaningful biological properties.  
+- Fully runnable notebooks with step-by-step cells our engineers can execute.  
+- Lightweight tasks available (e.g., simple protein property prediction) that run quickly.  
+- Demonstrates how deep learning models connect **sequence → predicted function/property**, which matches our group’s protein modeling theme.
+
+
+## **Why It’s Reproducible**
+
+- Notebooks run top-to-bottom in Jupyter/Colab.  
+- Small demo datasets included.  
+- Only basic Python dependencies needed.  
+- No GPU required for simple examples.
+
