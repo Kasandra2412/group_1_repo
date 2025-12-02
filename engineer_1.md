@@ -158,13 +158,13 @@ This working method outputted a number of data and 2 pictures depicting the dist
 ---
 ## **Steps taken:**
 1. I began by following the package installation instructions. I inputed the following into R:
-```r
-install.packages("remotes")
-library(remotes)
+	```r
+	install.packages("remotes")
+	library(remotes)
 
-remotes::install_github("carmonalab/STACAS")
-remotes::install_github("carmonalab/ProjecTILs")
-```
+	remotes::install_github("carmonalab/STACAS")
+	remotes::install_github("carmonalab/ProjecTILs")
+	```
 
 	* This is where I encountered an error immediately. I tried to download any dependencies the tool would have needed, but then I got an error that stated that STACAS doesn't work with the version of R than I had.
 	* I tried downgrading R to a previous version, but this didn't solve the issue. It seems that Seurat and STACAS overall only work with x86_64 architecture and not the ARM architecture in my mac.
