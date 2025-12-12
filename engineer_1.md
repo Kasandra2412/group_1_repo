@@ -41,7 +41,7 @@
 **Sent by:** Biologist 1  
 **Github link:** (https://github.com/CL-CHEN-Lab/OK-Seq)  
 **Results: Success!**  
-**Tools used:** Ubuntu VM, R, ChatGPT, Google, git, samtools, IGV.    
+**Tools used:** Ubuntu VM, R, ChatGPT, Google, git, IGV.    
 
 ---
 
