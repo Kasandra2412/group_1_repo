@@ -40,7 +40,7 @@
 **Paper:** OKseqHMM: a genome-wide replication fork directionality analysis toolkit  
 **Sent by:** Biologist 1  
 **Github link:** (https://github.com/CL-CHEN-Lab/OK-Seq)  
-**Results: Success!**  
+**Results: (Partial) Success!** - Had to use the provided sample dataset as the original ones were very large and would take too long.
 **Tools used:** Ubuntu VM, R, ChatGPT, Google, git, IGV.    
 
 ---
@@ -170,3 +170,29 @@ This working method outputted a number of data and 2 pictures depicting the dist
 	* I tried downgrading R to a previous version, but this didn't solve the issue. It seems that Seurat and STACAS overall only work with x86_64 architecture and not the ARM architecture in my mac.
 
 
+
+# Report 6 - SPACe
+
+---
+
+**Paper:** SPACe: an open-source, single cell analysis of Cell Painting data  
+**Sent by:** Biologist 1  
+**Github link:** (https://github.com/dlabate/SPACe/tree/main)  
+**Results:**  Failed due to large data size.  
+**Tools used:** macOS, Anaconda, AWS, ChatGPT.  
+
+---
+## **Main issues:**
+1. The datasets provided from the Github were very large and taking a long time to download. Spend 2.5+ hours to download only one out of the six of the datasets required and it had already reached 66GB. If it kept increasing (which it would) my computer would have ran out of storage.
+---
+## **Steps taken:**
+1. The instructions required to install Anaconda, but I already had the app installed so this step was skipped. I went ahead opened an anaconda terminal by inputing the following command: `conda create --name tensors python=3.10 --no-default-packages`
+2. Accessed the terminal: `conda activate tensors`
+3. Installed cellpose as required within the environment: `python -m pip install cellpose --upgrade`
+4. Installed SPACe directly from Github: `pip install git+https://github.com/dlabate/SPACe.git`
+5. Tried to download the datasets:
+	* The datasets were provided through an external link and there were 6 folders:  BR00115125-31.
+	* The datasets were provided through AWS S3 Explorer so i had to install aws cli to install the datasets:
+	`pip install awscli`
+	* Used the aws command to download the data to my computer: `aws s3 cp --recursive s3://cellpainting-gallery/cpg0001-cellpainting-protocol/source_4/images/2020_08_11_Stain3_Yokogawa/images/ ./local_data/ --no-sign-request`
+	Despite waiting 2.5+ more hours the downloading process kept going and the file size kept increasing until it reached 66GiB. At this point the files were still downloading and only BR00115125 had fully downloaded. I decided to stop the downloading process because it was taking so long and my computer wouldn't be able to handle the large size of the files.
