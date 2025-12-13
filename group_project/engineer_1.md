@@ -194,5 +194,5 @@ This working method outputted a number of data and 2 pictures depicting the dist
 	* The datasets were provided through an external link and there were 6 folders:  BR00115125-31.
 	* The datasets were provided through AWS S3 Explorer so i had to install aws cli to install the datasets:
 	`pip install awscli`
-	* Used the aws command to download the data to my computer: `aws s3 cp --recursive s3://cellpainting-gallery/cpg0001-cellpainting-protocol/source_4/images/2020_08_11_Stain3_Yokogawa/images/ ./local_data/ --no-sign-request`
+	* Used the aws command to download the data to my computer: `aws s3 cp --recursive s3://cellpainting-gallery/cpg0001-cellpainting-protocol/source_4/images/2020_08_11_Stain3_Yokogawa/images/ ./local_data/ --no-sign-request`  
 	Despite waiting 2.5+ more hours the downloading process kept going and the file size kept increasing until it reached 66GiB. At this point the files were still downloading and only BR00115125 had fully downloaded. I decided to stop the downloading process because it was taking so long and my computer wouldn't be able to handle the large size of the files.
